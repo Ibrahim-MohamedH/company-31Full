@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company</title>
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/bootstrap/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="../index.php">Company</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.php"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Employees
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../employees/add.php"
+                    >Add Employee</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../employees/list.php"
+                    >List Employees</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Department
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../departments/add.php"
+                    >Add Department</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../departments/list.php"
+                    >List Departments</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../categories/add.php"
+                    >Add Category</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../categories/list.php"
+                    >List Categories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                products
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../products/add.php"
+                    >Add Product</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../products/list.php"
+                    >List Products</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  width="30"
+                  src="../assets/images/placeholder.png"
+                  class="rounded-circle"
+                />
+                John Doe
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <form class="dropdown-item" method="POST">
+                    <button name="logout" class="btn text-danger">
+                      log out
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../login.php"
+                >Sign in</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pt-5">
+      <h2 class="text-center text-light">List All Employees: 1</h2>
+      <div class="card border-0">
+        <div class="card-body bg-dark text-light">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Employee</th>
+                <th>email</th>
+                <th>department</th>
+                <th>actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- if there is data -->
+              <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>john@mailnator.com</td>
+                <td>Department 1</td>
+                <td>
+                  <a href="#" class="btn btn-info">show</a>
+                  <a href="#" class="btn btn-warning">Edit</a>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                </td>
+              </tr>
+              <!-- if no data -->
+              <tr>
+                <td colspan="5" class="text-center">no data to show</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
